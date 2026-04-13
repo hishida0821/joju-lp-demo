@@ -2,13 +2,13 @@
 
 function handleCheckSubscription (){
   const days = window.__APP_DAYS_SINCE_SUBSCRIPTION__;
-  const borderLine = 5;
+  const availableDate = window.__APP_AVAILABLE_DATE__;
   const button = document.querySelector('js-cta_button');
 
   alert('days =' + days)
 
   // console.log("daysSinceSubscription:", days);
-  if(days <= borderLine) {
+  if(days <= availableDate) {
     button.style.cssText = 'pointer-events: none;';
     alert('サブスク期間が足りていません')
   } else {
