@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>美活チャレンジキャンペーン開催！</title>
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <link rel="stylesheet" href="./assets/css/campaign.css">
+</head>
+<body class="cp02">
+  <main>
+    <div class="l-lpContent">
+      <div class="l-lpContainer">
+        <div class="l-lpHeroSection">
+          <span class="l-lpHeroSection_label --pink"><img class="l-lpHeroSection_label_text" src="./assets/img/cp02/vip_limited.png" alt="VIP限定!"></span>
+          <h1 class="l-lpHeroSection_title --pink"><img src="./assets/img/cp02/lp_title.png" alt="美活チャレンジキャンペーン開催！"></h1>
+          <p class="l-lpHeroSection_text">
+            いつもプレイありがとうございます！<br>
+            サブスク継続会員の皆さま向けビューティージムVIP限定の<br>
+            アップデートキャンペーンが始まります。
+          </p>
+          <div class="l-lpHeroSection_period --pink">
+            キャンペーン期間：<span class="l-lpHeroSection_period_large">2026</span>年<span class="l-lpHeroSection_period_large">5</span>月<span class="l-lpHeroSection_period_large">1</span>日(金)
+            <span class="l-lpHeroSection_period_medium">～</span>
+            <span class="l-lpHeroSection_period_large">7</span>月<span class="l-lpHeroSection_period_large">31</span>日(金)
+          </div>
+        </div>
+        <!-- hero section -->
+        <div class="l-lpChallenge_grid">
+          <figure class="l-lpChallenge_character">
+            <img src="./assets/img/cp02/illust_girl.png" alt="小鳥遊ルイ">
+          </figure>
+          <div class="l-lpChallenge_detail">
+            <img class="l-lpChallenge_detail_bg" src="./assets/img/cp02/bubble_left.png" alt="">
+            <h2 class="l-lpBubble_title l-lpChallenge_detail_title"><img src="./assets/img/cp02/challenge_title.png" alt="5秒クイズチャレンジ!"></h2>
+            <p class="l-lpBubble_text l-lpChallenge_detail_text">
+              超かんたん！<br>
+              5秒3択クイズを10問答えてクイズに正解すると…
+            </p>
+            <p class="l-lpBubble_highlight l-lpChallenge_detail_highlight --pink">
+              豪華プレゼント抽選に応募！<br>
+              抽選でスペシャル賞品が当たります！
+            </p>
+            <p class="l-lpBubble_text l-lpChallenge_detail_annotation">※ 何度でもチェレンジできます。</p>
+          </div>
+        </div>
+        <!-- challenge section -->
+        <div class="l-lpPresent_grid">
+          <figure class="l-lpPresent_character">
+            <img src="./assets/img/campaign/illust_chiyomaru.png" alt="千代丸">
+          </figure>
+          <div class="l-lpPresent_detail">
+            <img class="l-lpPresent_detail_bg" src="./assets/img/cp02/bubble_right.png" alt="">
+            <h2 class="l-lpBubble_title l-lpPresent_detail_title"><img src="./assets/img/cp02/present_title.png" alt="回答者全員プレゼント！"></h2>
+            <p class="l-lpBubble_text l-lpPresent_detail_text">
+              クイズに回答してくれたプレイヤー全員に
+            </p>
+            <p class="l-lpBubble_highlight l-lpPresent_detail_highlight --pink">
+              「住人たちのスマホ壁紙」を<br>
+              &nbsp;&nbsp;プレゼント！<br>
+              &nbsp;&nbsp;ここでしか手に入らない<br>
+              &nbsp;&nbsp;限定デザインです！
+            </p>
+            <img class="l-lpPresent_detail_characters" src="./assets/img/campaign/illust_characters.png" alt="sharehabitのキャラクターたち">
+            <img class="l-lpPresent_detail_smartphone" src="./assets/img/campaign/illust_smartphone.png" alt="スマートフォンのイラスト">
+          </div>
+        </div>
+        <!-- present section -->
+        <a class="l-lpCta_button --pink" href="">
+          <img src="./assets/img/cp02/quiz_start.png" alt="クイズを始める">
+        </a>
+        <!-- cta button -->
+      </div>
+    </div>
+
+  </main>
+</body>
+</html>

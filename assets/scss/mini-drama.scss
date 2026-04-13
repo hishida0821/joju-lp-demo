@@ -1,0 +1,52 @@
+@use "./Tools/mixins" as *;
+@use "./Setting/colors" as colors;
+@use "./Setting/variables";
+
+.l {
+  &-lpContainer {
+    padding-top: vw(88);
+    padding-bottom: vw(18);
+  }
+  &-lpMiniDrama {
+    &_title {
+      margin: 0 auto;
+      &.--purple {
+        width: vw(1638);
+      }
+      &.--pink {
+        width: vw(1427);
+      }
+      &.--green {
+        width: vw(1468);
+      }
+    }
+    &_comingSoon {
+      width: calc(100% + vw(20));
+      margin: vw(52) vw(-10) 0;
+      padding: vw(40) 0;
+      background-size: cover;
+      background-position: center top;
+      background-repeat: no-repeat;
+      &.--purple {
+        background-image: url(../img/mini-drama01/coming_soon_bg.png);
+      }
+      &.--pink {
+        background-image: url(../img/mini-drama02/coming_soon_bg.png);
+      }
+      &.--green {
+        background-image: url(../img/mini-drama03/coming_soon_bg.png);
+      }
+      &_text {
+        color: colors.$ColorWhite;
+        font-size: vw(100);
+        letter-spacing: 0.05em;
+        line-height: 1;
+        text-align: center;
+      }
+    }
+    &_characters {
+      width: vw(1786);
+      margin: vw(-42) auto 0;
+    }
+  }
+}

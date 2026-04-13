@@ -1,0 +1,44 @@
+.l-lpContainer {
+  padding-top: calc(88 / 3400 * 100vw);
+  padding-bottom: calc(18 / 3400 * 100vw);
+}
+.l-lpMiniDrama_title {
+  margin: 0 auto;
+}
+.l-lpMiniDrama_title.--purple {
+  width: calc(1638 / 3400 * 100vw);
+}
+.l-lpMiniDrama_title.--pink {
+  width: calc(1427 / 3400 * 100vw);
+}
+.l-lpMiniDrama_title.--green {
+  width: calc(1468 / 3400 * 100vw);
+}
+.l-lpMiniDrama_comingSoon {
+  width: calc(100% + 20 / 3400 * 100vw);
+  margin: calc(52 / 3400 * 100vw) calc(-10 / 3400 * 100vw) 0;
+  padding: calc(40 / 3400 * 100vw) 0;
+  background-size: cover;
+  background-position: center top;
+  background-repeat: no-repeat;
+}
+.l-lpMiniDrama_comingSoon.--purple {
+  background-image: url(../img/mini-drama01/coming_soon_bg.png);
+}
+.l-lpMiniDrama_comingSoon.--pink {
+  background-image: url(../img/mini-drama02/coming_soon_bg.png);
+}
+.l-lpMiniDrama_comingSoon.--green {
+  background-image: url(../img/mini-drama03/coming_soon_bg.png);
+}
+.l-lpMiniDrama_comingSoon_text {
+  color: #ffffff;
+  font-size: calc(100 / 3400 * 100vw);
+  letter-spacing: 0.05em;
+  line-height: 1;
+  text-align: center;
+}
+.l-lpMiniDrama_characters {
+  width: calc(1786 / 3400 * 100vw);
+  margin: calc(-42 / 3400 * 100vw) auto 0;
+}

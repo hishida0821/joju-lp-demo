@@ -1,0 +1,20 @@
+@use "../Tools/mixins" as *;
+@use "../Setting/colors";
+@use "../Setting/variables";
+
+.l {
+  &-lpContent {
+    padding: vw(117) vw(122) vw(120);
+    background-image: url(../img/common/lp_bg.png);
+    background-size: cover;
+    background-position: center top;
+    background-repeat: no-repeat;
+  }
+  &-lpContainer {
+    padding-top: vw(130);
+    background: rgba(255, 255, 255, 0.8);
+    border: vw(10) solid colors.$ColorWhite;
+    border-radius: vw(50);
+    box-shadow: vw(3) vw(6) vw(10) 0 rgba(0, 0, 0, 0.2);
+  }
+}

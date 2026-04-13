@@ -1,0 +1,278 @@
+@use "./Tools/mixins" as *;
+@use "./Setting/colors" as colors;
+@use "./Setting/variables";
+
+.l {
+  &-lpHeroSection {
+    &_label {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: vw(624);
+      height: vw(226);
+      margin: 0 auto;
+      border: vw(20) solid colors.$ColorWhite;
+      border-radius: vw(800);
+      box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.1);
+      &.--purple {
+        background: #BA56B9;
+        background: linear-gradient(135deg,rgba(186, 86, 185, 1) 0%, rgba(156, 18, 154, 1) 100%);
+      }
+      &.--pink {
+        background: #E06793;
+        background: linear-gradient(135deg,rgba(224, 103, 147, 1) 0%, rgba(215, 67, 120, 1) 100%);
+      }
+      &.--green {
+        background: #539D10;
+        background: linear-gradient(135deg,rgba(83, 157, 16, 1) 0%, rgba(52, 136, 30, 1) 100%);
+      }
+      &_text {
+        width: vw(398);
+        margin-top: vw(8);
+      }
+    }
+    &_title {
+      margin: vw(62) auto 0;
+      &.--purple {
+        width: vw(2972);
+      }
+      &.--pink {
+        width: vw(2390);
+      }
+      &.--green {
+        width: vw(2831);
+      }
+    }
+    &_text {
+      font-size: vw(80);
+      letter-spacing: 0.05em;
+      line-height: 1.8;
+      text-align: center;
+      margin-top: vw(70);
+    }
+    &_period {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: colors.$ColorWhite;
+      font-size: vw(90);
+      letter-spacing: -0.02em;
+      font-weight: bold;
+      width: vw(2870);
+      height: vw(198);
+      margin: vw(42) auto 0;
+      border-radius: vw(800);
+      &_medium {
+        font-size: vw(100);
+      }
+      &_large {
+        font-size: vw(140);
+      }
+      &.--purple {
+        background: colors.$ColorThemePurple;
+      }
+      &.--pink {
+        background: colors.$ColorThemePink;
+      }
+      &.--green {
+        background: colors.$ColorThemeGreen;
+      }
+    }
+  }
+  &-lpBubble {
+    &_title {
+      position: absolute;
+    }
+    &_text {
+      position: absolute;
+      font-size: vw(66);
+      letter-spacing: 0.04em;
+    }
+    &_highlight {
+      position: absolute;
+      font-size: vw(80);
+      letter-spacing: 0.05em;
+      line-height: 1.7;
+      text-decoration-color: colors.$ColorUnderLine;
+      text-decoration-line: underline;
+      text-decoration-thickness: vw(40);
+      text-underline-offset: vw(-10);
+    }
+  }
+  &-lpChallenge {
+    &_grid {
+      position: relative;
+      width: 100%;
+      margin-top: vw(230);
+    }
+    &_character {
+      position: absolute;
+      top: vw(-48);
+      right: vw(130);
+      width: vw(1116);
+      z-index: 2;
+    }
+    &_detail {
+      position: relative;
+      padding-left: vw(268);
+      &_bg {
+        width: vw(2122);
+      }
+      &_title {
+        top: vw(-126);
+        left: vw(104);
+        width: vw(1887);
+      }
+      &_text {
+        top: vw(284);
+        left: vw(530);
+      }
+      &_highlight {
+        top: vw(500);
+        left: vw(530);
+        &.--purple {
+          color: colors.$ColorThemePurple;
+        }
+        &.--pink {
+          color: colors.$ColorThemePink;
+        }
+        &.--green {
+          color: colors.$ColorThemeGreen;
+        }
+      }
+      &_annotation {
+        top: vw(802);
+        left: vw(522);
+        font-size: vw(48);
+      }
+    }
+  }
+  &-lpPresent {
+    &_grid {
+      position: relative;
+      width: 100%;
+      margin-top: vw(222);
+    }
+    &_character {
+      position: absolute;
+      top: vw(112);
+      left: vw(172);
+      width: vw(960);
+      z-index: 2;
+    }
+    &_detail {
+      position: relative;
+      padding-right: vw(150);
+      &_bg {
+        display: block;
+        width: vw(2070);
+        margin-left: auto;
+      }
+      &_title {
+        top: vw(-32);
+        right: vw(-8);
+        width: vw(1887);
+      }
+      &_text {
+        top: vw(246);
+        right: vw(485);
+      }
+      &_highlight {
+        top: vw(364);
+        right: vw(738);
+        &.--purple {
+          color: colors.$ColorThemePurple;
+        }
+        &.--pink {
+          color: colors.$ColorThemePink;
+        }
+        &.--green {
+          color: colors.$ColorThemeGreen;
+        }
+      }
+      &_characters {
+        position: absolute;
+        bottom: vw(-224);
+        right: vw(734);
+        width: vw(1160);
+      }
+      &_smartphone {
+        position: absolute;
+        bottom: vw(-190);
+        right: vw(194);
+        width: vw(608);
+      }
+    }
+  }
+  &-lpCta_button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    width: vw(2876);
+    height: vw(380);
+    margin: vw(312) auto vw(128);
+    background-size: cover;
+    background-position: center top;
+    background-repeat: no-repeat;
+    border: vw(10) solid colors.$ColorWhite;
+    border-radius: vw(50);
+    &.--purple {
+      background-image: url(../img/cp01/lp_footer_bg.png);
+    }
+    &.--pink {
+      background-image: url(../img/cp02/lp_footer_bg.png);
+    }
+    &.--green {
+      background-image: url(../img/cp03/lp_footer_bg.png);
+    }
+    &::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      right: vw(120);
+      margin: auto;
+      width: vw(170);
+      height: vw(170);
+      background-image: url(../img/campaign/icon_button_arrow.png);
+      background-size: cover;
+      background-repeat: no-repeat;
+    }
+    img {
+      width: vw(1119);
+    }
+  }
+  &-lpFooter {
+    position: relative;
+    width: calc(100% + vw(20));
+    height: vw(570);
+    margin: vw(322) vw(-10) vw(-10);
+    &_bg {
+      position: absolute;
+      top: vw(0);
+      left: vw(0);
+      width: 100%;
+      height: vw(570);
+    }
+    &_title {
+      position: absolute;
+      top: vw(110);
+      left: 0;
+      right: 0;
+      margin: auto;
+      width: vw(1863);
+    }
+    &_text {
+      position: absolute;
+      top: vw(340);
+      left: 0;
+      right: 0;
+      margin: auto;
+      color: colors.$ColorWhite;
+      font-size: vw(80);
+      font-weight: 800;
+      text-align: center;
+    }
+  }
+}

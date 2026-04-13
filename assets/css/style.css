@@ -1,0 +1,55 @@
+@import url("https://fonts.googleapis.com/css2?family=M+PLUS+1:wght@100..900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  color: #333333;
+  font-size: 1.6rem;
+  font-family: "M PLUS 1", sans-serif;
+  font-weight: 700;
+  line-height: 1.6;
+}
+
+a {
+  color: #333333;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  vertical-align: middle;
+}
+
+.c-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+.c-button > img {
+  width: auto;
+  height: calc(170 / 3400 * 100vw);
+}
+
+.l-lpContent {
+  padding: calc(117 / 3400 * 100vw) calc(122 / 3400 * 100vw) calc(120 / 3400 * 100vw);
+  background-image: url(../img/common/lp_bg.png);
+  background-size: cover;
+  background-position: center top;
+  background-repeat: no-repeat;
+}
+.l-lpContainer {
+  padding-top: calc(130 / 3400 * 100vw);
+  background: rgba(255, 255, 255, 0.8);
+  border: calc(10 / 3400 * 100vw) solid #ffffff;
+  border-radius: calc(50 / 3400 * 100vw);
+  -webkit-box-shadow: calc(3 / 3400 * 100vw) calc(6 / 3400 * 100vw) calc(10 / 3400 * 100vw) 0 rgba(0, 0, 0, 0.2);
+          box-shadow: calc(3 / 3400 * 100vw) calc(6 / 3400 * 100vw) calc(10 / 3400 * 100vw) 0 rgba(0, 0, 0, 0.2);
+}

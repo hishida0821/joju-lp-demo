@@ -1,0 +1,5 @@
+$vw-base: 3400 !default;
+
+@function vw($px, $base: $vw-base) {
+  @return calc((#{$px} / #{$base}) * 100vw);
+}
