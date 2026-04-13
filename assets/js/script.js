@@ -8,6 +8,8 @@ function handleCheckSubscription (){
   // console.log("daysSinceSubscription:", days);
   if(days <= borderLine) {
     button.style.cssText = 'pointer-events: none;';
+  } else {
+    alert('サブスク期間が足りていません')
   }
 
 }
