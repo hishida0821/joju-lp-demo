@@ -2,8 +2,10 @@
 
 function handleCheckSubscription (){
   const days = window.__APP_DAYS_SINCE_SUBSCRIPTION__;
-  const borderLine = 38;
+  const borderLine = 3;
   const button = document.querySelector('js-cta_button');
+
+  alert('days =' + days)
 
   // console.log("daysSinceSubscription:", days);
   if(days <= borderLine) {
