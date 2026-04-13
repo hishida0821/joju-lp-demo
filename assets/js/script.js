@@ -5,7 +5,7 @@ function handleCheckSubscription (){
   const availableDate = window.__APP_AVAILABLE_DATE__;
   const button = document.querySelector('js-cta_button');
 
-  alert('days =' + days)
+  alert(`サブスク期間は${days}で、期限は${availableDate}です。`)
 
   // console.log("daysSinceSubscription:", days);
   if(days <= availableDate) {
