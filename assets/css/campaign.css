@@ -215,6 +215,9 @@
   right: calc(194 / 3400 * 100vw);
   width: calc(608 / 3400 * 100vw);
 }
+.l-lpCta {
+  display: none;
+}
 .l-lpCta_button {
   display: -webkit-box;
   display: -webkit-flex;
@@ -237,6 +240,7 @@
   background-repeat: no-repeat;
   border: calc(10 / 3400 * 100vw) solid #ffffff;
   border-radius: calc(50 / 3400 * 100vw);
+  cursor: pointer;
 }
 .l-lpCta_button.--purple {
   background-image: url(../img/cp01/lp_footer_bg.png);

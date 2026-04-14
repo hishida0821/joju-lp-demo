@@ -204,43 +204,47 @@
       }
     }
   }
-  &-lpCta_button {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: relative;
-    width: vw(2876);
-    height: vw(380);
-    margin: vw(312) auto vw(128);
-    background-size: cover;
-    background-position: center top;
-    background-repeat: no-repeat;
-    border: vw(10) solid colors.$ColorWhite;
-    border-radius: vw(50);
-    &.--purple {
-      background-image: url(../img/cp01/lp_footer_bg.png);
-    }
-    &.--pink {
-      background-image: url(../img/cp02/lp_footer_bg.png);
-    }
-    &.--green {
-      background-image: url(../img/cp03/lp_footer_bg.png);
-    }
-    &::after {
-      content: '';
-      position: absolute;
-      top: 0;
-      bottom: 0;
-      right: vw(120);
-      margin: auto;
-      width: vw(170);
-      height: vw(170);
-      background-image: url(../img/campaign/icon_button_arrow.png);
+  &-lpCta {
+      display: none;
+    &_button {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+      width: vw(2876);
+      height: vw(380);
+      margin: vw(312) auto vw(128);
       background-size: cover;
+      background-position: center top;
       background-repeat: no-repeat;
-    }
-    img {
-      width: vw(1119);
+      border: vw(10) solid colors.$ColorWhite;
+      border-radius: vw(50);
+      cursor: pointer;
+      &.--purple {
+        background-image: url(../img/cp01/lp_footer_bg.png);
+      }
+      &.--pink {
+        background-image: url(../img/cp02/lp_footer_bg.png);
+      }
+      &.--green {
+        background-image: url(../img/cp03/lp_footer_bg.png);
+      }
+      &::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        right: vw(120);
+        margin: auto;
+        width: vw(170);
+        height: vw(170);
+        background-image: url(../img/campaign/icon_button_arrow.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+      }
+      img {
+        width: vw(1119);
+      }
     }
   }
   &-lpFooter {
