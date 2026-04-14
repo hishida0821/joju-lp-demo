@@ -59,6 +59,9 @@ function handleGetQuery(){
   }
 
   popupButton.addEventListener('click', handlePopup, false);
+  linkButton.addEventListener('click', function(){
+    window.location.href = 'https://jh.swam-pj.jp/quiz/01/'
+  })
 
 }
 window.addEventListener('DOMContentLoaded', handleGetQuery, false);
