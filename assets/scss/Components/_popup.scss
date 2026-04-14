@@ -1,0 +1,51 @@
+@use "../Tools/mixins" as *;
+@use "../Setting/colors" as colors;
+@use "../Setting/variables";
+
+.c-popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  height: 100dvh;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.6s, visibility 0.6s;
+  z-index: 10;
+  &_film {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+  }
+  &_inner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: vw(1000);
+    height: 100%;
+  }
+  &_body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: vw(32);
+    width: 100%;
+    padding: vw(64);
+    background: colors.$ColorWhite;
+  }
+  &_title {
+    font-size: vw(32);
+  }
+  &_text {
+    font-size: vw(24);
+  }
+}
