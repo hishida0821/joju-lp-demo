@@ -33,7 +33,7 @@ function handleGetQuery(){
   const params = new URLSearchParams(window.location.search);
   const userId = params.get('user_id');
   // const startedAt = params.get('subscription_started_at');
-  const startedAt = '2026-04-13'
+  const startedAt = '2026-04-01'
 
   const toDayObj = new Date();
   const toDay = `${toDayObj.getFullYear()}-${String(toDayObj.getMonth() + 1).padStart(2, '0')}-${String(toDayObj.getDate()).padStart(2, '0')}`;
