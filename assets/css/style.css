@@ -73,7 +73,7 @@ img {
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.7);
+  background: rgba(0, 0, 0, 0.4);
 }
 .c-popup_inner {
   display: -webkit-box;
@@ -93,31 +93,50 @@ img {
   left: 0;
   right: 0;
   margin: auto;
-  width: calc(1000 / 3400 * 100vw);
+  width: calc(2400 / 3400 * 100vw);
   height: 100%;
 }
 .c-popup_body {
+  position: relative;
+  width: 100%;
+  height: calc(584 / 3400 * 100vw);
+  padding: calc(20 / 3400 * 100vw);
+  background: #C19859;
+  background: -webkit-linear-gradient(45deg, rgb(193, 152, 89) 4%, rgb(136, 84, 0) 39%, rgb(140, 88, 4) 44%, rgb(152, 100, 16) 50%, rgb(173, 121, 36) 55%, rgb(193, 140, 55) 59%, rgb(202, 151, 64) 60%, rgb(193, 140, 55) 92%);
+  background: linear-gradient(45deg, rgb(193, 152, 89) 4%, rgb(136, 84, 0) 39%, rgb(140, 88, 4) 44%, rgb(152, 100, 16) 50%, rgb(173, 121, 36) 55%, rgb(193, 140, 55) 59%, rgb(202, 151, 64) 60%, rgb(193, 140, 55) 92%);
+  border-radius: calc(30 / 3400 * 100vw);
+}
+.c-popup_close {
+  position: absolute;
+  top: calc(-80 / 3400 * 100vw);
+  right: calc(-80 / 3400 * 100vw);
+  width: calc(240 / 3400 * 100vw);
+  height: calc(240 / 3400 * 100vw);
+  background: transparent;
+  border: none;
+  cursor: pointer;
+}
+.c-popup_frame {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -webkit-flex-direction: column;
-      -ms-flex-direction: column;
-          flex-direction: column;
   -webkit-box-align: center;
   -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
-  gap: calc(32 / 3400 * 100vw);
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   width: 100%;
-  padding: calc(64 / 3400 * 100vw);
+  height: 100%;
   background: #ffffff;
-}
-.c-popup_title {
-  font-size: calc(32 / 3400 * 100vw);
+  border-radius: calc(20 / 3400 * 100vw);
 }
 .c-popup_text {
-  font-size: calc(24 / 3400 * 100vw);
+  font-size: calc(66 / 3400 * 100vw);
+  letter-spacing: 0.04em;
+  line-height: 1.4;
+  text-align: center;
 }
