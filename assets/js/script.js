@@ -33,7 +33,7 @@ function handleGetQuery(){
     const diffMs = toDayObj.setHours(0,0,0,0) - startedAtObj.setHours(0,0,0,0);
     const diffDays = Math.floor(diffMs / (1000 * 60 * 60 * 24));
     // console.log(`開始日からの経過日数: ${diffDays}日`);
-    if (diffDays >= 100) {
+    if (diffDays >= 37) {
       if (linkButton) {
         linkButton.style.cssText = "display: block;";
       }
